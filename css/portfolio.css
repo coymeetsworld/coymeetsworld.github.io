@@ -289,6 +289,19 @@ h2 {
   color: rgba(235,112,160,1);
 }
 
+#contactSection svg, #contactSection svg:visited {
+  text-decoration: none;
+  fill: #333;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#contactSection svg:hover {
+  fill: rgba(235,112,160,1);
+}
 #contactSection p {
   margin-left: 80px;
 }
@@ -300,6 +313,18 @@ h2 {
   text-decoration: none;
   display: inline-block;
 
+}
+
+.social_codewars {
+  display: block;
+  margin: auto;
+  height: 32px;
+  width: 32px;
+}
+.codewars {
+  vertical-align: bottom;
+  height: 32px;
+  width: 32px;
 }
 
 /* Convert navbar from side-by-side to stacked buttons at small screen sizes */
@@ -336,6 +361,4 @@ h2 {
    text-align: center;
    padding-bottom: 10px;
   }
-
-
 }
