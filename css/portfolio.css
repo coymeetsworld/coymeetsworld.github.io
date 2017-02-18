@@ -70,6 +70,18 @@ body {
   padding: 12em 12em 0 12em;
 }
 
+/*#home::before {
+  content: '';
+  background-image: linear-gradient(90deg, rgba(49,61,65,0.4), rgba(49,61,65,0.4));
+  background-image: -webkit-linear-gradient(left, rgba(49,61,65,0.4), rgba(49,61,65,0.4));
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}*/
+
 #home h1 {
   text-align: center;
   font-size: 4.0em;
