@@ -12,7 +12,6 @@ body {
   justify-content: space-between;
   -webkit-align-items: center;
   align-items: center;
-
   position: fixed;
   z-index: 2; /* Needed because portfolio images are using absolute/relative values. */
   background: rgba(0,0,0, 0.8);
@@ -27,15 +26,15 @@ body {
 }
 
 #whoami {
-  font-size: 1.5em;
   font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 1.5em;
 }
 
 #navbar {
   display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   padding-right: 10px;
 }
 
@@ -55,11 +54,10 @@ body {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
 #navbar a:hover {
   background-color: rgba(235,112,160,1);
 }
-
-
 
 #home {
   background: url('../images/background_image.jpeg');
@@ -100,8 +98,6 @@ body {
   padding-top: 3.5em;
 }
 
-
-
 h2 {
   text-align: center;
   font-size: 2.0em;
@@ -112,7 +108,6 @@ h2 {
   flex: 1 1 auto;
   margin-left: 30px;
 }
-
 
 #aboutDescription {
   flex: 2 1 800px;
@@ -231,6 +226,7 @@ h2 {
    -ms-transform: translateY(0px);
    transform: translateY(0px);
 }
+
 .portfolio_project:hover p {
    opacity: 1;
    -webkit-transform: translateY(-10px);
@@ -245,7 +241,6 @@ h2 {
   transition-delay: 0.1s;
 }
 
-
 .portfolio_project:hover p:last-of-type {
   padding-bottom: 20px;  
 }
@@ -254,7 +249,6 @@ h2 {
   opacity: 1;
   background-color: rgba(0,0,0,0.8);
 }
-
 
 .portfolio_project:hover img {
   -webkit-transform: scale(1.1);
@@ -284,7 +278,8 @@ h2 {
   align-items: center;
 }
 
-#contactSection a, #contactSection a:visited {
+#contactSection a,
+#contactSection a:visited {
   text-decoration: none;
   color: #333;
   -webkit-transition: all 0.2s ease-in-out;
@@ -311,17 +306,19 @@ h2 {
 #contactSection svg:hover {
   fill: rgba(235,112,160,1);
 }
+
 #contactSection p {
   margin-left: 80px;
 }
+
 #contactSection .social_links {
   list-style: none;
   margin-right: 80px;
 }
+
 #contactSection li {
   text-decoration: none;
   display: inline-block;
-
 }
 
 .social_codewars {
@@ -330,6 +327,7 @@ h2 {
   height: 32px;
   width: 32px;
 }
+
 .codewars {
   vertical-align: bottom;
   height: 32px;
@@ -339,18 +337,20 @@ h2 {
 /* Convert navbar from side-by-side to stacked buttons at small screen sizes */
 @media (max-width: 642px) {
 
-	#header {
-		-webkit-flex-flow: column;
-		flex-flow: column;
-	}
-	#navbar a {
-		width: 100%;
-		margin-bottom: 2px;
-	}
+  #header {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+  }
+
+  #navbar a {
+    width: 100%;
+    margin-bottom: 2px;
+  }
 
   #home {
     padding: 14em 1em 0 1em;
   }
+
   #home h1 {
     text-align: center;
     font-size: 2.0em;
@@ -363,6 +363,7 @@ h2 {
     text-align: center;
     padding-bottom: 25px;
   }
+
   #contactSection .social_links {
    width: 100%;
    margin: 0;
